@@ -53,6 +53,7 @@ cmp.setup {
     end,
   },
   mapping = {
+    ['<Tab>'] = cmp.mapping.confirm({select=true}),
     ['<C-b>'] = cmp.mapping(function(_)
       if cmp.visible() then
         cmp.scroll_docs(-4)
