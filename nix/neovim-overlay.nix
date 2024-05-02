@@ -79,6 +79,8 @@ with final.pkgs.lib; let
     nvim-web-devicons
     vim-repeat
     coc-ltex
+    vim-grammarous
+
     # ^ libraries that other plugins depend on
     # bleeding-edge plugins from flake inputs
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
