@@ -81,7 +81,8 @@ with final.pkgs.lib; let
     coc-ltex
     vim-grammarous
     vim-visual-multi
-    
+    zig-vim
+
     # ^ libraries that other plugins depend on
     # bleeding-edge plugins from flake inputs
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
@@ -94,6 +95,7 @@ with final.pkgs.lib; let
     # language servers, etc.
     lua-language-server
     nil # nix LSP
+    zls
   ];
 in {
   # This is the neovim derivation
