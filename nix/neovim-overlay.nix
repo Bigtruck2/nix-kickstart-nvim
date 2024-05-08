@@ -82,7 +82,7 @@ with final.pkgs.lib; let
     vim-grammarous
     vim-visual-multi
     zig-vim
-
+    nvim-lspconfig
     # ^ libraries that other plugins depend on
     # bleeding-edge plugins from flake inputs
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
