@@ -25,6 +25,7 @@ with final.pkgs.lib; let
   #   optional = <true|false>; # Default: false
   #   ...
   # }
+  unstable = import <nixos-unstable>;  
   all-plugins = with pkgs.vimPlugins; [
     # plugins from nixpkgs go in here.
     # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
@@ -87,7 +88,7 @@ with final.pkgs.lib; let
     # bleeding-edge plugins from flake inputs
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
-    tabby-nvim
+    unstable.vim-tabby
     which-key-nvim
   ];
 
@@ -97,7 +98,9 @@ with final.pkgs.lib; let
     lua-language-server
     nil # nix LSP
     zls
+    unstable.tabby
   ];
+  
 in {
   # This is the neovim derivation
   # returned by the overlay
