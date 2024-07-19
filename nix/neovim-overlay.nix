@@ -8,7 +8,6 @@ with final.pkgs.lib; let
       inherit pname src;
       version = src.lastModifiedDate;
     };
-  unstable = import <nixos-unstable> {};
   # Make sure we use the pinned nixpkgs instance for wrapNeovimUnstable,
   # otherwise it could have an incompatible signature when applying this overlay.
   pkgs-wrapNeovim = inputs.nixpkgs.legacyPackages.${pkgs.system};
@@ -26,7 +25,6 @@ with final.pkgs.lib; let
   # }
   all-plugins = with pkgs.vimPlugins; [
     # plugins from nixpkgs go in here.
-    # https://search.nixos.org/packages?channel=unstable&from=0&size=50&sort=relevance&type=packages&query=vimPlugins
     vim-svelte
     vim-astro
     nvim-treesitter.withAllGrammars
@@ -86,8 +84,8 @@ with final.pkgs.lib; let
     # bleeding-edge plugins from flake inputs
     # (mkNvimPlugin inputs.wf-nvim "wf.nvim") # (example) keymap hints | https://github.com/Cassin01/wf.nvim
     # ^ bleeding-edge plugins from flake inputs
-    unstable.vimPlugins.vim-tabby
     which-key-nvim
+    harpoon2
   ];
 
 
@@ -96,7 +94,6 @@ with final.pkgs.lib; let
     lua-language-server
     nil # nix LSP
     zls
-    unstable.tabby
   ];
   
 in {
