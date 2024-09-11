@@ -88,6 +88,7 @@ with final.pkgs.lib; let
     harpoon2
     vim-latex-live-preview
     firenvim
+    nvim-jdtls
 
   ];
 

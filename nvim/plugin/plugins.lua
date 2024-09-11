@@ -9,6 +9,7 @@ vim.g.did_load_plugins_plugin = true
 require('nvim-surround').setup()
 require('which-key').setup()
 require 'lspconfig'.zls.setup{}
+require('lspconfig').jdtls.setup({})
 local harpoon = require('harpoon')
 harpoon:setup({})
 
