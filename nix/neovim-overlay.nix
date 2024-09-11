@@ -87,6 +87,7 @@ with final.pkgs.lib; let
     which-key-nvim
     harpoon2
     vim-latex-live-preview
+    firenvim
 
   ];
 
