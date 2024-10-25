@@ -99,6 +99,8 @@ with final.pkgs.lib; let
     nil # nix LSP
     zls
     jdt-language-server
+    pyright
+    python312Packages.numpy
   ];
   
 in {
