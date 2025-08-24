@@ -87,6 +87,9 @@ with final.pkgs.lib; let
     which-key-nvim
     harpoon2
     vim-latex-live-preview
+    nvim-treesitter-parsers.typst
+    typst-conceal-vim
+    typst-preview-nvim
     firenvim
     nvim-jdtls
 
@@ -101,6 +104,7 @@ with final.pkgs.lib; let
     jdt-language-server
     pyright
     python312Packages.numpy
+    tinymist
   ];
   
 in {
