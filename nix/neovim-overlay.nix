@@ -92,7 +92,6 @@ with final.pkgs.lib; let
     typst-preview-nvim
     firenvim
     nvim-jdtls
-
   ];
 
 
@@ -105,6 +104,8 @@ with final.pkgs.lib; let
     pyright
     python312Packages.numpy
     tinymist
+    R
+    rPackages.languageserver
   ];
   
 in {

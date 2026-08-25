@@ -12,6 +12,7 @@ require 'lspconfig'.zls.setup{}
 require('lspconfig').jdtls.setup({})
 require'lspconfig'.pyright.setup{}
 require('lspconfig').tinymist.setup({})
+require("lspconfig").r_language_server.setup({})
 local harpoon = require('harpoon')
 harpoon:setup({})
 
