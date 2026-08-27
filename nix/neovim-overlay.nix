@@ -104,8 +104,11 @@ with final.pkgs.lib; let
     pyright
     python312Packages.numpy
     tinymist
-    R
-    rPackages.languageserver
+    (rWrapper.override {
+    packages = with rPackages; [
+      languageserver
+    ];
+    })
   ];
   
 in {
