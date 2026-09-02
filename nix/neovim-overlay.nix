@@ -2,6 +2,11 @@
 {inputs}: final: prev:
 with final.pkgs.lib; let
   pkgs = final;
+  unstable = import inputs.nixpkgs-unstable {
+    inherit (final) system;
+    config = final.config;
+  };
+
   # Use this to create a plugin from a flake input
   mkNvimPlugin = src: pname:
     pkgs.vimUtils.buildVimPlugin {
@@ -99,7 +104,7 @@ with final.pkgs.lib; let
     # language servers, etc.
     lua-language-server
     nil # nix LSP
-    zls
+    unstable.zls_0_16
     jdt-language-server
     pyright
     python312Packages.numpy
