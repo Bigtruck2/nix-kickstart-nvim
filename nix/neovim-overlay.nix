@@ -80,7 +80,6 @@ with final.pkgs.lib; let
     plenary-nvim
     nvim-web-devicons
     vim-repeat
-    coc-ltex
     vim-grammarous
     vim-visual-multi
     zig-vim

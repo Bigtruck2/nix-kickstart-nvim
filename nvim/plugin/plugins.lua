@@ -8,11 +8,18 @@ vim.g.did_load_plugins_plugin = true
 
 require('nvim-surround').setup()
 require('which-key').setup()
-require 'lspconfig'.zls.setup{}
-require('lspconfig').jdtls.setup({})
-require'lspconfig'.pyright.setup{}
-require('lspconfig').tinymist.setup({})
-require("lspconfig").r_language_server.setup({})
+vim.lsp.config("zls",{})
+vim.lsp.config("jdtls",{})
+vim.lsp.config("pyright",{})
+vim.lsp.config("tinymist",{})
+vim.lsp.config("r_language_server",{})
+vim.lsp.enable({
+"zls",
+"jdtls",
+"pyright",
+"tinymist",
+"r_language_server"
+})
 local harpoon = require('harpoon')
 harpoon:setup({})
 
