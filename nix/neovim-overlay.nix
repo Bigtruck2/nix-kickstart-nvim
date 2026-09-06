@@ -4,7 +4,7 @@ with final.pkgs.lib; let
   pkgs = final;
   unstable = import inputs.nixpkgs-unstable {
     inherit (final) system;
-    config = final.config;
+      config.allowUnfree = true;
   };
 
   # Use this to create a plugin from a flake input
