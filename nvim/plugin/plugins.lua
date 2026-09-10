@@ -26,7 +26,8 @@ vim.lsp.enable({
 "jdtls",
 "pyright",
 "tinymist",
-"r_language_server"
+"r_language_server",
+"matlab_ls"
 })
 local harpoon = require('harpoon')
 harpoon:setup({})
