@@ -17,7 +17,6 @@ vim.lsp.config("matlab_ls",{
                 filetypes = {"matlab"},
                 settings = {
                   MATLAB = {
-                    installPath = "/home/sebastianb/Downloads/matlab_R2026a_Linux",
                     indexWorkspace = true,
                     matlabConnectionTiming = "onStart",
                   telemetry = false,
