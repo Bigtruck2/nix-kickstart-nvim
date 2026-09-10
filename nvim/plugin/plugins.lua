@@ -13,6 +13,7 @@ vim.lsp.config("jdtls",{})
 vim.lsp.config("pyright",{})
 vim.lsp.config("tinymist",{})
 vim.lsp.config("r_language_server",{})
+vim.lsp.config("matlab-language-server",{})
 vim.lsp.enable({
 "zls",
 "jdtls",

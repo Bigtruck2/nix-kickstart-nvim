@@ -109,6 +109,7 @@ with final.pkgs.lib; let
     pyright
     python312Packages.numpy
     tinymist
+    matlab-language-server
     (rWrapper.override {
     packages = with rPackages; [
       languageserver
