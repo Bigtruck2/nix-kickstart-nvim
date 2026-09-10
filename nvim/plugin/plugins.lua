@@ -16,9 +16,12 @@ vim.lsp.config("r_language_server",{})
 vim.lsp.config("matlab_ls",{
                 filetypes = {"matlab"},
                 settings = {
-                    matlab = {
-                        installPath = "/home/sebastianb/Downloads/matlab_R2026a_Linux"
-                    },
+                  MATLAB = {
+                    installPath = "/home/sebastianb/Downloads/matlab_R2026a_Linux",
+                    indexWorkspace = true,
+                    matlabConnectionTiming = "onStart",
+                  telemetry = false,
+                  },
                 },
                 single_file_support = true})
 vim.lsp.enable({
