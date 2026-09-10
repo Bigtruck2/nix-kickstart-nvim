@@ -13,7 +13,14 @@ vim.lsp.config("jdtls",{})
 vim.lsp.config("pyright",{})
 vim.lsp.config("tinymist",{})
 vim.lsp.config("r_language_server",{})
-vim.lsp.config("matlab-language-server",{})
+vim.lsp.config("matlab_ls",{
+                filetypes = {"matlab"},
+                settings = {
+                    matlab = {
+                        installPath = "/home/sebastianb/Downloads/matlab_R2026a_Linux"
+                    },
+                },
+                single_file_support = true})
 vim.lsp.enable({
 "zls",
 "jdtls",
